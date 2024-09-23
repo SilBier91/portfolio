@@ -1,0 +1,203 @@
+<html lang="es"></html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Silvia - Desarrolladora web
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+     body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth; /* Desplazamiento suave */
+    }
+
+    #experiencia {
+      margin-top: 150px;
+      font-family: 'Inter', sans-serif;
+    }
+    a:hover{
+        color: rgb(139, 92, 246);
+    }
+
+  </style>
+ </head>
+ <body class="bg-white">
+  <!--MENÚ-->
+  <nav class="flex justify-center mt-8">
+   <ul class="flex space-x-6 bg-white rounded-full shadow-md px-6 py-2">
+    <li>
+     <a class="text-gray-600" href="#experiencia">
+      Experiencia
+     </a>
+    </li>
+    <li>
+     <a class="text-gray-600" href="#proyectos">
+      Proyectos
+     </a>
+    </li>
+    <li>
+     <a class="text-gray-600" href="#sobremi">
+      Sobre mi
+     </a>
+    </li>
+    <li>
+     <a class="text-gray-600" href="#">
+      Contacto
+     </a>
+    </li>
+    <li class="relative group">
+        <a class="text-gray-600 dark:text-gray-300 cursor-pointer">
+          <i class="fas fa-desktop"></i>
+        </a>
+        <!-- Submenú -->
+        <ul class="absolute bg-white dark:bg-gray-700 shadow-lg rounded-lg py-2 mt-2 right-0 hidden group-hover:block">
+          <li>
+            <button class="block px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600" onclick="setLightMode()">
+              Light
+            </button>
+          </li>
+          <li>
+            <button class="block px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600" onclick="setDarkMode()">
+              Dark
+            </button>
+          </li>
+        </ul>
+      </li>
+  </ul>
+  </nav>
+  <main class="max-w-3xl mx-auto mt-16 px-4">
+   <div class="flex items-center mb-6">
+    <img alt="Foto principal" class="rounded-full mr-4" height="210" src="../PORTFOLIO/img/foto_Linkedin.jpg" width="150"/>
+    <div class="bg-purple-100 text-green-800 px-3 py-1 rounded-full text-sm">
+     Disponible para trabajar
+    </div>
+   </div>
+   <h1 class="text-5xl font-bold mb-4">
+    Hola, soy Silvia
+   </h1>
+   <p class="text-xl mb-6">
+    <span class="text-purple-500 font-semibold">
+     Desarrolladora web
+    </span>
+    recién titulada en Desarrollo de aplicaciones web y especializada en Front-End. Resido en Madrid, España.
+   </p>
+   <div class="flex space-x-4">
+    <a class="flex items-center text-gray-600" href="mailto:silvia.lm91@gmail.com">
+     <i class="far fa-envelope mr-2">
+     </i>
+     silvia.lm91@gmail.com
+    </a>
+    <a class="flex items-center text-gray-600" href="https://www.linkedin.com/in/silvia-ledesma-mart%C3%ADn/" target="_blank">
+     <i class="fab fa-linkedin mr-2">
+     </i>
+     LinkedIn
+    </a>
+    <a class="flex items-center text-gray-600" href="https://github.com/SilBier91" target="_blank">
+     <i class="fab fa-github mr-2">
+     </i>
+     GitHub
+    </a>
+   </div>
+  </main>
+  <!--EXPERIENCIA LABORAL-->
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-semibold mb-8 flex items-center" id="experiencia">
+          Experiencia Laboral
+        </h1>
+        
+        <div class="relative pl-8 mb-12">
+            <div class="absolute left-0 top-0 h-full w-0.5 bg-gray-200"></div>
+            
+            <div class="relative mb-12">
+                <h2 class="text-xl font-medium text-purple-400 mb-1">Desarrolladora Full-Stack (Becaria)</h2>
+                <h3 class="text-lg font-medium text-gray-700 mb-1">Ensalza SL</h3>
+                <p class="text-sm text-gray-500 mb-4">Abril 2024 - Julio 2024</p>
+                <p class="text-gray-600">
+                    Arreglo de bugs y soporte en ambas partes del proyecto (backend y frontend) haciendo uso de herramientas como PHP, Wordpress, MySQL y un framework de la empresa.
+                </p>
+            </div>
+            
+            <div class="relative">
+                <h2 class="text-xl font-medium text-purple-400 mb-1">Desarrollando proyectos propios</h2>
+                <p class="text-sm text-gray-500 mb-4">Actualmente...</p>
+                <p class="text-gray-600">
+                    En estos momentos estoy en búsqueda activa de trabajo y ampliando mis conocimientos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--PROYECTOS-->
+    <div class="container mx-auto px-4 py-8 mt-40" id="proyectos">
+      <div class="max-w-3xl mx-auto flex flex-col items-center gap-8">
+          <h1 class="text-3xl font-semibold flex items-center mb-6">
+            <span class="text-gray-600 mr-2">
+             &lt;/&gt;
+            </span>
+            Proyectos
+           </h1> 
+              <img alt="UFO Experience" class="rounded-lg shadow-lg" height="700" src="../PORTFOLIO/img/ufo.png" width="600"/>
+            
+            <div class="md:w-1/2 flex flex-col justify-center">
+              <h2 class="text-2xl font-bold mb-4 text-center">
+                UFO Experience - Experiencias paranormales
+              </h2>
+              <div class="flex gap-4 mb-4 justify-center">
+                <img alt="Php"  height="30" src="../PORTFOLIO/img/php-logo.svg" width="30"/>
+                <img alt="MySQL"  height="30" src="../PORTFOLIO/img/logo-mysql-170x115.png" width="30"/>
+                <img alt="Javascript"  height="30" src="../PORTFOLIO/img/JavaScript-logo.png" width="30"/>
+              </div>
+              <p class="text-gray-600 mb-6 text-center">
+                Página de reservas dedicada al mundo paranormal. 
+              </p>
+              <a class="inline-flex items-center px-4 py-2 bg-gray-800 text-white text-center rounded-md hover:bg-gray-700 transition-colors" href="https://github.com/SilBier91/UFOexperience" target="_blank">
+                <i class="fab fa-github mr-2"></i>
+                Código
+              </a>
+            </div>
+          </div>
+          
+
+    <!--SOBRE MÍ-->
+    <div class="max-w-3xl mx-auto px-4 py-8 mt-40">
+        <h1 class="text-3xl font-semibold flex items-center mb-6" id="sobremi">
+         <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          </path>
+         </svg>
+         Sobre mí
+        </h1>
+        <div class="flex flex-col md:flex-row gap-8">
+         <div class="flex-grow">
+          <p class="mb-4">
+            Mi nombre es Silvia Ledesma, a mis 32 años decidí dar un vuelco a mi vida y empezar de nuevo en este apasionante mundo de la programación. Hace diez años realicé un curso intensivo de Front-End, y al ver que se me daba tan bien de forma natural, decidí empezar a estudiar DAW.<br>
+            Terminé mis estudios con una nota media de 8, tanto en mi media general como en mi proyecto TFG.<br>
+
+            Soy una persona que se esfuerza al máximo, le encanta aprender y que sabe trabajar en equipo.
+          </p>
+         </div>
+         <div class="flex-shrink-0">
+          <img alt="Foto sobre mi" src="../PORTFOLIO/img/foto_sobremi.jpg" width="200"/>
+         </div>
+        </div>
+        <footer class="mt-12 flex justify-between text-sm text-gray-600">
+         <p>
+          © 2024 Silvia Ledesma Martín. Todos los derechos reservados
+         </p>
+         <nav>
+          <a class="mr-4" href="#">
+           Sobre mí
+          </a>
+          <a href="#">
+           Contacto
+          </a>
+         </nav>
+        </footer>
+       </div>
+    <script src="../PORTFOLIO/js/functions.js"></script>
+</body>
+</html>
